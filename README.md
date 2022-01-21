@@ -1,6 +1,6 @@
 # t3ignition
 
-t3ignition is TYPO3 extensions that provides a better error debugging experience with the use of [Ignition](https://github.com/facade/ignition). It is basically a wrapper to easily use Ignition in TYPO3.
+t3ignition is TYPO3 extensions that provides a better error debugging experience with the use of [Ignition](https://github.com/spatie/ignition). It is basically a wrapper to easily use Ignition in TYPO3.
 
 ## Setup
 
