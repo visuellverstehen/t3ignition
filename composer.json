@@ -1,0 +1,13 @@
+{
+    "name": "visuellverstehen/t3ignition",
+    "type": "typo3-cms-extension",
+    "require": {
+        "spatie/ignition": "^1.0",
+        "typo3/cms-core": "^11.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "VV\\T3ignition\\": "Classes/"
+        }
+    }
+}
