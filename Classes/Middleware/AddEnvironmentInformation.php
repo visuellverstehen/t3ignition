@@ -3,7 +3,7 @@
 namespace VV\T3ignition\Middleware;
 
 use Closure;
-use TYPO3\CMS\Core\Core\Environment;
+use TYPO3\CMS\Core\Information\Typo3Version;
 use Spatie\FlareClient\FlareMiddleware\FlareMiddleware;
 use Spatie\FlareClient\Report;
 
@@ -14,10 +14,10 @@ class AddEnvironmentInformation implements FlareMiddleware
 {
     public function handle(Report $report, Closure $next)
     {
-        $report->frameworkVersion(TYPO3_version);
+        $report->frameworkVersion(new Typo3Version());
 
         $report->group('env', [
-            'TYPO3_version' => TYPO3_version,
+            'TYPO3_version' => (new Typo3Version())->getVersion(),
             // 'laravel_locale' => app()->getLocale(),
             // 'laravel_config_cached' => app()->configurationIsCached(),
             // 'app_debug' => $GLOBALS['TYPO3_CONF_VARS']['FE']['debug'] ?? true,
