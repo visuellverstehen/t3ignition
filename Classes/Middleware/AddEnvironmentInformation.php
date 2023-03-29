@@ -3,6 +3,7 @@
 namespace VV\T3ignition\Middleware;
 
 use Closure;
+use TYPO3\CMS\Core\Core\Environment;
 use TYPO3\CMS\Core\Information\Typo3Version;
 use Spatie\FlareClient\FlareMiddleware\FlareMiddleware;
 use Spatie\FlareClient\Report;
